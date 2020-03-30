@@ -1,0 +1,115 @@
+body {
+    background-color: #f7f1e3;
+    font-family: cursive;
+    color: #1f3c59;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid darkgrey;
+}
+
+.book-details {
+    width: 350px;
+    height: 100%;
+    z-index: 1;
+    color: #f7f1e3;
+    background-color: #355d86;
+    position: absolute;
+    transition: 0.2s;
+    transform: translate(0, 0);
+}
+
+.hide {
+    transform: translate(-360px, 0);
+}
+
+.book-details img {
+    float: right;
+    margin-top: 10px;
+}
+
+.book-title {
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 2px solid darkgrey;
+}
+
+.book-title button {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+
+.book-display {
+    height: 100vh;
+}
+
+.input-field {
+    background-color: lightseagreen;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    top: 100px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 17px 9px rgba(0, 0, 0, 0.85);
+    display: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.add-btn {
+    width: 50%;
+}
+
+table, tbody, tr, td {
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+    background-color: #1f3c59;
+    color: #f7f1e3;
+    border-radius: 8px;
+}
+
+.books-table {
+    position: relative;
+    top: 20%;
+    margin: auto;
+}
+
+td {
+    min-width: 80px;
+}
+
+td img {
+    height: 50px;
+    transition: 0.2s;
+}
+
+td img:hover {
+    transform: scale(4);
+}
+
+.action-btn span {
+    background-color: #ffb83a;
+    border-radius: 30%;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.add-book-btn {
+    cursor: pointer;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #ffb83a;
+    color: black;
+    border: 1px solid #1f3c59;
+    border-radius: 10px;
+}
+
+button {
+    cursor: pointer;
+}

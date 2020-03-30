@@ -1,0 +1,29 @@
+body {
+    background-color: #eee;
+    font-family: cursive;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid darkgray;
+}
+
+.book-display {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+table, tbody, tr, td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    min-width: 100px;
+}
+
+td img {
+    width: 100px;
+    
+}

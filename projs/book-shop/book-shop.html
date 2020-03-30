@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <header>
+        <h1>Welcome to the book shop</h1>
+    </header>
+    <section class="book-display">
+        <div class="book-details hide">
+
+        </div>
+        <button class="add-book-btn" onclick="showInputFieldForNewBook()">Create new book</button>
+        <div class="input-field">
+            <div class="name-input">
+                Name:<input type="text" name="book-name">
+            </div>
+            <div class="price-input">
+                Price:<input type="number" min="0" name="book-price">
+            </div>
+            <div class="add-btn"><button onclick="onAddBook()">Add</button></div>
+            <!-- <div class="update-btn"><button onclick="onUpdateBook()" >Update</button></div> -->
+        </div>
+        <table class="books-table">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Title</td>
+                    <td>Price</td>
+                    <td>Image</td>
+                    <td colspan="3">Actions</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/utils.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>
